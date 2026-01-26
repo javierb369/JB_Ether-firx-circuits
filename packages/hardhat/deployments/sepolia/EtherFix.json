@@ -1,0 +1,291 @@
+{
+  "address": "0xbEc63809082d2345116C871c29CCaCDdb84c15FB",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "client",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "name": "RepairCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "RepairFinished",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "completeRepair",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_description",
+          "type": "string"
+        }
+      ],
+      "name": "createRepair",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nextRepairId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "payVideoConsultation",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "repairs",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "client",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "isCompleted",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "isPaid",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "transactionHash": "0x8e71d2f37b324ae7658ffcc9c49e9baa82105cb8dc11c21e2b267d937ad21b49",
+  "receipt": {
+    "to": null,
+    "from": "0x74Ae1be27ea6Fb85deb2Dc64e228a892EE69D84C",
+    "contractAddress": "0xbEc63809082d2345116C871c29CCaCDdb84c15FB",
+    "transactionIndex": 45,
+    "gasUsed": "540900",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xb60926ba64f1755a19c964cc39583fc0053144e1421354d241943215195c2130",
+    "transactionHash": "0x8e71d2f37b324ae7658ffcc9c49e9baa82105cb8dc11c21e2b267d937ad21b49",
+    "logs": [],
+    "blockNumber": 10107778,
+    "cumulativeGasUsed": "7378094",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "7af59ab03d04f97a35c53e02018c2066",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"client\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"}],\"name\":\"RepairCreated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"RepairFinished\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"completeRepair\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_description\",\"type\":\"string\"}],\"name\":\"createRepair\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"nextRepairId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"payVideoConsultation\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"repairs\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"client\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"description\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"isCompleted\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"isPaid\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/EtherFix.sol\":\"EtherFix\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/EtherFix.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity >=0.8.0 <0.9.0;\\r\\n\\r\\ncontract EtherFix {\\r\\n    struct Repair {\\r\\n        uint256 id;\\r\\n        address client;\\r\\n        string description;\\r\\n        uint256 price;\\r\\n        bool isCompleted;\\r\\n        bool isPaid;\\r\\n    }\\r\\n\\r\\n    uint256 public nextRepairId;\\r\\n    mapping(uint256 => Repair) public repairs;\\r\\n    \\r\\n    // Variable para el due\\u00f1o (t\\u00e9cnico) que recibir\\u00e1 los pagos\\r\\n    address public immutable owner;\\r\\n\\r\\n    event RepairCreated(uint256 id, address client, uint256 price);\\r\\n    event RepairFinished(uint256 id);\\r\\n\\r\\n    constructor() {\\r\\n        owner = msg.sender; // El que despliega el contrato es el t\\u00e9cnico\\r\\n    }\\r\\n\\r\\n    // El cliente crea una solicitud enviando el pago (msg.value)\\r\\n    function createRepair(string memory _description) public payable {\\r\\n        require(msg.value > 0, \\\"El precio debe ser mayor a 0\\\");\\r\\n\\r\\n        repairs[nextRepairId] = Repair({\\r\\n            id: nextRepairId,\\r\\n            client: msg.sender,\\r\\n            description: _description,\\r\\n            price: msg.value,\\r\\n            isCompleted: false,\\r\\n            isPaid: false\\r\\n        });\\r\\n\\r\\n        emit RepairCreated(nextRepairId, msg.sender, msg.value);\\r\\n        nextRepairId++;\\r\\n    }\\r\\n\\r\\n    // El t\\u00e9cnico marca como finalizado y cobra\\r\\n    function completeRepair(uint256 _id) public {\\r\\n        Repair storage repair = repairs[_id];\\r\\n        require(!repair.isCompleted, \\\"Ya esta completada\\\");\\r\\n        require(msg.sender == owner, \\\"Solo el tecnico puede marcar como completado\\\");\\r\\n        \\r\\n        repair.isCompleted = true;\\r\\n        repair.isPaid = true;\\r\\n\\r\\n        // CORRECCI\\u00d3N L\\u00cdNEAS 41-44:\\r\\n        // Usamos una direcci\\u00f3n payable para transferir los fondos al due\\u00f1o\\r\\n        (bool success, ) = payable(owner).call{value: repair.price}(\\\"\\\");\\r\\n        require(success, \\\"La transferencia fallo\\\");\\r\\n\\r\\n        emit RepairFinished(_id);\\r\\n    }\\r\\n\\r\\n    // Funci\\u00f3n para recibir fondos directamente (opcional)\\r\\n    receive() external payable {}\\r\\n    // Funci\\u00f3n para pagar una video-asesor\\u00eda (por ejemplo, 0.05 ETH)\\r\\nfunction payVideoConsultation() public payable {\\r\\n    require(msg.value >= 0.05 ether, \\\"Pago insuficiente para asesoria\\\");\\r\\n    // Aqu\\u00ed podr\\u00edas emitir un evento si quieres registrarlo\\r\\n}\\r\\n}\\r\\n\\r\\n\",\"keccak256\":\"0x8005029bce89dce39334c1e6afaa48c2518a23d4a80ba516b0c267c3f756b79a\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60a0604052348015600f57600080fd5b50336080526080516108d561003c6000396000818160a00152818161043d01526104dd01526108d56000f3fe6080604052600436106100595760003560e01c8063859c06f6146100655780638da5cb5b1461008e578063baea0aed146100da578063bb1423e9146100ef578063e6289a78146100f7578063f20af5191461012957600080fd5b3661006057005b600080fd5b34801561007157600080fd5b5061007b60005481565b6040519081526020015b60405180910390f35b34801561009a57600080fd5b506100c27f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b039091168152602001610085565b6100ed6100e83660046105db565b610149565b005b6100ed6102b2565b34801561010357600080fd5b50610117610112366004610694565b61030b565b604051610085969594939291906106ad565b34801561013557600080fd5b506100ed610144366004610694565b6103da565b6000341161019e5760405162461bcd60e51b815260206004820152601c60248201527f456c2070726563696f206465626520736572206d61796f72206120300000000060448201526064015b60405180910390fd5b6040805160c081018252600080548083523360208085019182528486018781523460608701526080860185905260a086018590529284526001908190529490922083518155915193820180546001600160a01b0319166001600160a01b03909516949094179093559151909190600282019061021a90826107b9565b50606082810151600383015560808301516004909201805460a09094015161ffff1990941692151561ff00191692909217610100931515939093029290921790556000546040805191825233602083015234908201527fd6f9a4450ab6ebef53897872dd0ae529a41ce4f1b158c8063784dd41036b115c910160405180910390a16000805490806102aa83610878565b919050555050565b66b1a2bc2ec500003410156103095760405162461bcd60e51b815260206004820152601f60248201527f5061676f20696e737566696369656e7465207061726120617365736f726961006044820152606401610195565b565b60016020819052600091825260409091208054918101546002820180546001600160a01b03909216929161033e90610730565b80601f016020809104026020016040519081016040528092919081815260200182805461036a90610730565b80156103b75780601f1061038c576101008083540402835291602001916103b7565b820191906000526020600020905b81548152906001019060200180831161039a57829003601f168201915b50505050600383015460049093015491929160ff80821692506101009091041686565b6000818152600160205260409020600481015460ff16156104325760405162461bcd60e51b81526020600482015260126024820152715961206573746120636f6d706c657461646160701b6044820152606401610195565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146104bf5760405162461bcd60e51b815260206004820152602c60248201527f536f6c6f20656c207465636e69636f207075656465206d617263617220636f6d60448201526b6f20636f6d706c657461646f60a01b6064820152608401610195565b60048101805461ffff191661010117905560038101546040516000917f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316918381818185875af1925050503d806000811461053e576040519150601f19603f3d011682016040523d82523d6000602084013e610543565b606091505b505090508061058d5760405162461bcd60e51b81526020600482015260166024820152754c61207472616e73666572656e6369612066616c6c6f60501b6044820152606401610195565b6040518381527fbd9b11d11d25b3d023535b1e5ff0c9c4b63ce150dc45f70df5254e0c0cbef5559060200160405180910390a1505050565b634e487b7160e01b600052604160045260246000fd5b6000602082840312156105ed57600080fd5b813567ffffffffffffffff81111561060457600080fd5b8201601f8101841361061557600080fd5b803567ffffffffffffffff81111561062f5761062f6105c5565b604051601f8201601f19908116603f0116810167ffffffffffffffff8111828210171561065e5761065e6105c5565b60405281815282820160200186101561067657600080fd5b81602084016020830137600091810160200191909152949350505050565b6000602082840312156106a657600080fd5b5035919050565b86815260018060a01b038616602082015260c06040820152600085518060c084015260005b818110156106ef57602081890181015160e08684010152016106d2565b50600060e0828501015260e0601f19601f83011684010191505084606083015261071d608083018515159052565b82151560a0830152979650505050505050565b600181811c9082168061074457607f821691505b60208210810361076457634e487b7160e01b600052602260045260246000fd5b50919050565b601f8211156107b457806000526020600020601f840160051c810160208510156107915750805b601f840160051c820191505b818110156107b1576000815560010161079d565b50505b505050565b815167ffffffffffffffff8111156107d3576107d36105c5565b6107e7816107e18454610730565b8461076a565b6020601f82116001811461081b57600083156108035750848201515b600019600385901b1c1916600184901b1784556107b1565b600084815260208120601f198516915b8281101561084b578785015182556020948501946001909201910161082b565b50848210156108695786840151600019600387901b60f8161c191681555b50505050600190811b01905550565b60006001820161089857634e487b7160e01b600052601160045260246000fd5b506001019056fea2646970667358221220b6458f4f92d042a06843b5ea69c69c68f29035ca7588114c1e160d10519ccf1464736f6c634300081e0033",
+  "deployedBytecode": "0x6080604052600436106100595760003560e01c8063859c06f6146100655780638da5cb5b1461008e578063baea0aed146100da578063bb1423e9146100ef578063e6289a78146100f7578063f20af5191461012957600080fd5b3661006057005b600080fd5b34801561007157600080fd5b5061007b60005481565b6040519081526020015b60405180910390f35b34801561009a57600080fd5b506100c27f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b039091168152602001610085565b6100ed6100e83660046105db565b610149565b005b6100ed6102b2565b34801561010357600080fd5b50610117610112366004610694565b61030b565b604051610085969594939291906106ad565b34801561013557600080fd5b506100ed610144366004610694565b6103da565b6000341161019e5760405162461bcd60e51b815260206004820152601c60248201527f456c2070726563696f206465626520736572206d61796f72206120300000000060448201526064015b60405180910390fd5b6040805160c081018252600080548083523360208085019182528486018781523460608701526080860185905260a086018590529284526001908190529490922083518155915193820180546001600160a01b0319166001600160a01b03909516949094179093559151909190600282019061021a90826107b9565b50606082810151600383015560808301516004909201805460a09094015161ffff1990941692151561ff00191692909217610100931515939093029290921790556000546040805191825233602083015234908201527fd6f9a4450ab6ebef53897872dd0ae529a41ce4f1b158c8063784dd41036b115c910160405180910390a16000805490806102aa83610878565b919050555050565b66b1a2bc2ec500003410156103095760405162461bcd60e51b815260206004820152601f60248201527f5061676f20696e737566696369656e7465207061726120617365736f726961006044820152606401610195565b565b60016020819052600091825260409091208054918101546002820180546001600160a01b03909216929161033e90610730565b80601f016020809104026020016040519081016040528092919081815260200182805461036a90610730565b80156103b75780601f1061038c576101008083540402835291602001916103b7565b820191906000526020600020905b81548152906001019060200180831161039a57829003601f168201915b50505050600383015460049093015491929160ff80821692506101009091041686565b6000818152600160205260409020600481015460ff16156104325760405162461bcd60e51b81526020600482015260126024820152715961206573746120636f6d706c657461646160701b6044820152606401610195565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146104bf5760405162461bcd60e51b815260206004820152602c60248201527f536f6c6f20656c207465636e69636f207075656465206d617263617220636f6d60448201526b6f20636f6d706c657461646f60a01b6064820152608401610195565b60048101805461ffff191661010117905560038101546040516000917f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316918381818185875af1925050503d806000811461053e576040519150601f19603f3d011682016040523d82523d6000602084013e610543565b606091505b505090508061058d5760405162461bcd60e51b81526020600482015260166024820152754c61207472616e73666572656e6369612066616c6c6f60501b6044820152606401610195565b6040518381527fbd9b11d11d25b3d023535b1e5ff0c9c4b63ce150dc45f70df5254e0c0cbef5559060200160405180910390a1505050565b634e487b7160e01b600052604160045260246000fd5b6000602082840312156105ed57600080fd5b813567ffffffffffffffff81111561060457600080fd5b8201601f8101841361061557600080fd5b803567ffffffffffffffff81111561062f5761062f6105c5565b604051601f8201601f19908116603f0116810167ffffffffffffffff8111828210171561065e5761065e6105c5565b60405281815282820160200186101561067657600080fd5b81602084016020830137600091810160200191909152949350505050565b6000602082840312156106a657600080fd5b5035919050565b86815260018060a01b038616602082015260c06040820152600085518060c084015260005b818110156106ef57602081890181015160e08684010152016106d2565b50600060e0828501015260e0601f19601f83011684010191505084606083015261071d608083018515159052565b82151560a0830152979650505050505050565b600181811c9082168061074457607f821691505b60208210810361076457634e487b7160e01b600052602260045260246000fd5b50919050565b601f8211156107b457806000526020600020601f840160051c810160208510156107915750805b601f840160051c820191505b818110156107b1576000815560010161079d565b50505b505050565b815167ffffffffffffffff8111156107d3576107d36105c5565b6107e7816107e18454610730565b8461076a565b6020601f82116001811461081b57600083156108035750848201515b600019600385901b1c1916600184901b1784556107b1565b600084815260208120601f198516915b8281101561084b578785015182556020948501946001909201910161082b565b50848210156108695786840151600019600387901b60f8161c191681555b50505050600190811b01905550565b60006001820161089857634e487b7160e01b600052601160045260246000fd5b506001019056fea2646970667358221220b6458f4f92d042a06843b5ea69c69c68f29035ca7588114c1e160d10519ccf1464736f6c634300081e0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 16,
+        "contract": "contracts/EtherFix.sol:EtherFix",
+        "label": "nextRepairId",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 21,
+        "contract": "contracts/EtherFix.sol:EtherFix",
+        "label": "repairs",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_uint256,t_struct(Repair)14_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_uint256,t_struct(Repair)14_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct EtherFix.Repair)",
+        "numberOfBytes": "32",
+        "value": "t_struct(Repair)14_storage"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_struct(Repair)14_storage": {
+        "encoding": "inplace",
+        "label": "struct EtherFix.Repair",
+        "members": [
+          {
+            "astId": 3,
+            "contract": "contracts/EtherFix.sol:EtherFix",
+            "label": "id",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 5,
+            "contract": "contracts/EtherFix.sol:EtherFix",
+            "label": "client",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address"
+          },
+          {
+            "astId": 7,
+            "contract": "contracts/EtherFix.sol:EtherFix",
+            "label": "description",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 9,
+            "contract": "contracts/EtherFix.sol:EtherFix",
+            "label": "price",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 11,
+            "contract": "contracts/EtherFix.sol:EtherFix",
+            "label": "isCompleted",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_bool"
+          },
+          {
+            "astId": 13,
+            "contract": "contracts/EtherFix.sol:EtherFix",
+            "label": "isPaid",
+            "offset": 1,
+            "slot": "4",
+            "type": "t_bool"
+          }
+        ],
+        "numberOfBytes": "160"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

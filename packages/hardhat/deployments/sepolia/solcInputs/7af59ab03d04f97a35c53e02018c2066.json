@@ -1,0 +1,36 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/EtherFix.sol": {
+      "content": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.8.0 <0.9.0;\r\n\r\ncontract EtherFix {\r\n    struct Repair {\r\n        uint256 id;\r\n        address client;\r\n        string description;\r\n        uint256 price;\r\n        bool isCompleted;\r\n        bool isPaid;\r\n    }\r\n\r\n    uint256 public nextRepairId;\r\n    mapping(uint256 => Repair) public repairs;\r\n    \r\n    // Variable para el dueño (técnico) que recibirá los pagos\r\n    address public immutable owner;\r\n\r\n    event RepairCreated(uint256 id, address client, uint256 price);\r\n    event RepairFinished(uint256 id);\r\n\r\n    constructor() {\r\n        owner = msg.sender; // El que despliega el contrato es el técnico\r\n    }\r\n\r\n    // El cliente crea una solicitud enviando el pago (msg.value)\r\n    function createRepair(string memory _description) public payable {\r\n        require(msg.value > 0, \"El precio debe ser mayor a 0\");\r\n\r\n        repairs[nextRepairId] = Repair({\r\n            id: nextRepairId,\r\n            client: msg.sender,\r\n            description: _description,\r\n            price: msg.value,\r\n            isCompleted: false,\r\n            isPaid: false\r\n        });\r\n\r\n        emit RepairCreated(nextRepairId, msg.sender, msg.value);\r\n        nextRepairId++;\r\n    }\r\n\r\n    // El técnico marca como finalizado y cobra\r\n    function completeRepair(uint256 _id) public {\r\n        Repair storage repair = repairs[_id];\r\n        require(!repair.isCompleted, \"Ya esta completada\");\r\n        require(msg.sender == owner, \"Solo el tecnico puede marcar como completado\");\r\n        \r\n        repair.isCompleted = true;\r\n        repair.isPaid = true;\r\n\r\n        // CORRECCIÓN LÍNEAS 41-44:\r\n        // Usamos una dirección payable para transferir los fondos al dueño\r\n        (bool success, ) = payable(owner).call{value: repair.price}(\"\");\r\n        require(success, \"La transferencia fallo\");\r\n\r\n        emit RepairFinished(_id);\r\n    }\r\n\r\n    // Función para recibir fondos directamente (opcional)\r\n    receive() external payable {}\r\n    // Función para pagar una video-asesoría (por ejemplo, 0.05 ETH)\r\nfunction payVideoConsultation() public payable {\r\n    require(msg.value >= 0.05 ether, \"Pago insuficiente para asesoria\");\r\n    // Aquí podrías emitir un evento si quieres registrarlo\r\n}\r\n}\r\n\r\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evmVersion": "paris",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
