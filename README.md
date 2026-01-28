@@ -331,6 +331,23 @@ Paso 37
 <img width="413" height="232" alt="image" src="https://github.com/user-attachments/assets/d97a476b-d2a6-4f87-b0ee-46ce0a3d2567" />
 
 
+Paso 38 transformación de mi Dapp trabajando con hardhat cambio para saldo infinito 
+
+<img width="566" height="319" alt="image" src="https://github.com/user-attachments/assets/ef5fe0b9-4537-4aac-bcb6-b2c6e47e9988" />
+<img width="566" height="319" alt="image" src="https://github.com/user-attachments/assets/b02f470d-83ca-4291-a007-df13bb103eec" />
+
+
+Paso 39 anexandole mas formas 
+
+<img width="566" height="319" alt="image" src="https://github.com/user-attachments/assets/4ba8611b-dc9d-4cb1-a007-92af28b56ce2" />
+
+<img width="566" height="319" alt="image" src="https://github.com/user-attachments/assets/33f29d69-95c1-41e6-97b6-453f833b77aa" />
+
+
+
+
+
+
 
 
 
